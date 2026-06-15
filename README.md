@@ -1,124 +1,131 @@
-# ChainSubscription Hub
+# 🎓 Grade Management System (Soroban)
 
 ## 📌 Overview
 
-**ChainSubscription Hub** is a decentralized smart contract system built on the **Stellar Soroban platform** for managing subscription plans and user subscriptions. It enables automated renewals, transparent state tracking, and secure subscription lifecycle management without relying on centralized services.
+The **Grade Management System** is a decentralized smart contract application built on the **Stellar Soroban platform**. It enables secure, transparent, and tamper-proof management of student grades on the blockchain.
 
-This project is designed to bring **trustless subscription infrastructure** to Web3 applications and businesses.
+This system eliminates reliance on centralized databases by storing academic records on-chain, ensuring **data integrity, auditability, and trust** between students, teachers, and institutions.
+
+---
+
+## 🎯 Project Vision
+
+The goal of this project is to create a **trustless academic record system** where:
+
+* Students cannot alter their grades
+* Teachers securely manage and update scores
+* Institutions ensure transparency and fairness
 
 ---
 
 ## 🚀 Features
 
-### 🔧 Plan Management
+### 👨‍🎓 Student Management
 
-* Admins can create, update, and manage subscription plans
-* Each plan includes:
+* Store student information (ID, name)
+* Unique identification for each student
 
-  * Name
-  * Price
-  * Duration
+### 📚 Subject Management
 
-### 👤 User Subscriptions
+* Support multiple subjects per student
+* Flexible structure for course expansion
 
-* Users can subscribe to available plans
-* Supports optional **auto-renewal**
+### 📝 Grade Management
 
-### 🔄 Automated Renewal
+* Add or update student grades
+* Store scores securely on-chain
+* Prevent unauthorized modifications
 
-* Subscriptions can automatically renew after expiration
-* Renewal logic can be triggered by:
+### 📊 GPA Calculation (Optional)
 
-  * Users
-  * External schedulers (off-chain services)
-
-### ❌ Cancellation
-
-* Users can cancel subscriptions:
-
-  * Immediately
-  * Or disable future renewals
+* Calculate average score (GPA)
+* Provide academic performance insights
 
 ### 🔐 Access Control
 
-* Admin-only functions for plan management
-* User-only control over personal subscriptions
+* Only authorized accounts (teachers/admins) can modify grades
+* Students can only view their results
 
-### 📊 Transparency
+### 📖 Transparency
 
-* All subscription data stored **on-chain**
-* Publicly queryable for auditability
+* All grade records are stored on-chain
+* Publicly verifiable and immutable
 
 ---
 
 ## 🧱 Architecture
 
-* **Smart Contract Layer**
+### 🔗 Smart Contract Layer
 
-  * Built with **Rust + Soroban SDK**
-  * Handles logic for plans and subscriptions
+* Built with **Rust + Soroban SDK**
+* Handles:
 
-* **Blockchain Layer**
+  * Student data
+  * Subject data
+  * Grade storage and logic
 
-  * Runs on **Stellar network**
-  * Ensures immutability and transparency
+### 🌐 Blockchain Layer
 
-* **Off-chain Components (optional)**
+* Runs on **Stellar network**
+* Ensures:
 
-  * Payment processors
-  * Auto-renew schedulers
-  * Notification systems
+  * Immutability
+  * Security
+  * Transparency
+
+### 🖥 Off-chain Components (Optional)
+
+* Frontend dashboard (Web/App)
+* Authentication system
+* Analytics & reporting tools
 
 ---
 
 ## ⚙️ How It Works
 
-1. **Initialize Contract**
+1. **Deploy Contract**
 
-   * Deploy contract and assign admin
+   * Initialize the contract with an admin account
 
-2. **Create Plans**
+2. **Add Students**
 
-   * Admin defines subscription plans
+   * Register students with unique IDs
 
-3. **Subscribe**
+3. **Add Subjects**
 
-   * Users choose a plan and subscribe
-   * Optionally enable auto-renew
+   * Define subjects or courses
 
-4. **Renewal**
+4. **Assign Grades**
 
-   * Triggered manually or automatically
+   * Teachers input or update scores
 
-5. **Cancellation**
+5. **Query Grades**
 
-   * Users can cancel anytime
+   * Students and users can view results
 
-6. **Query**
+6. **Calculate GPA (Optional)**
 
-   * Anyone can fetch subscription data
+   * Compute average scores automatically
 
 ---
 
 ## 🧪 Example Use Cases
 
-* SaaS subscription platforms
-* Digital content access (courses, media)
-* Membership systems
-* API access management
-* Web3 service subscriptions
+* School and university grade systems
+* Online learning platforms
+* Certification and training programs
+* Blockchain-based academic records
 
 ---
 
 ## 🔮 Future Improvements
 
-* 💳 Payment integration (Soroban tokens / oracles)
-* 🎯 Multi-tier and bundled plans
-* 🆓 Free trials and discount codes
-* 📱 User dashboard (frontend UI)
-* 🔔 Notification system (renewal alerts)
-* 🌐 Cross-platform subscription sync
-* 📑 Compliance and reporting tools
+* 📊 Advanced GPA & ranking system
+* 🧾 Transcript generation (PDF/NFT certificates)
+* 🔔 Notification system (grade updates)
+* 🌐 Integration with e-learning platforms
+* 🪪 Identity verification (DID integration)
+* 📚 Multi-semester and curriculum tracking
 
 ---
 
@@ -126,25 +133,24 @@ This project is designed to bring **trustless subscription infrastructure** to W
 
 * **Rust** – Smart contract development
 * **Soroban SDK** – Stellar smart contract framework
-* **Stellar Blockchain** – Decentralized execution layer
+* **Stellar Blockchain** – Decentralized data layer
 
 ---
 
 ## 📦 Contract Information
 
-* **Contract ID:**
-  `CARGXVXDLDGUAW3H5CAKZXIURM64TNPXMVZGG6EZOHPVXHUGZNBLWGQH`
-
+- **Contract ID:**  
+  CARGXVXDLDGUAW3H5CAKZXIURM64TNPXMVZGG6EZOHPVXHUGZNBLWGQH
 ---
 
 ## 🤝 Contribution
 
 Contributions are welcome!
-Feel free to:
+You can:
 
-* Fork the repository
+* Fork this repository
 * Submit pull requests
-* Suggest improvements or new features
+* Suggest new features or improvements
 
 ---
 
@@ -154,8 +160,8 @@ This project is licensed under the **MIT License**.
 
 ---
 
-## 💡 Vision
+## 💡 Summary
 
-ChainSubscription Hub aims to redefine how subscription systems operate by removing centralized control and enabling **transparent, automated, and trustless subscription management** on the blockchain.
+The Grade Management System demonstrates how blockchain technology can be applied to education by providing a **secure, transparent, and decentralized solution** for managing academic records.
 
 ---
